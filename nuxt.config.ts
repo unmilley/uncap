@@ -1,4 +1,5 @@
 import tailwindcss from '@tailwindcss/vite'
+import { deepParseJson } from './utils/deepParseJson'
 
 const fontHref = [
 	'https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap',
