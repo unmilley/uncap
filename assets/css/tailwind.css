@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+	themes: light --default, dark --prefersdark;
+	root: ':root';
+	logs: false;
+}
+/* 
+base: 'Nunito',
+logo: 'Tiny5',
+*/
+@theme {
+	--default-font-family: Nunito, var(--font-sans);
+	--font-logo: 'Tomorrow', sans-serif;
+	/* --font-display:  */
+	/* var( --default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ) */
+	--inset-shadow-right: -6px 0 5px -5px var(--color-base-300) inset;
+	--inset-shadow-down: 0 -6px 5px -5px var(--color-base-300) inset;
+	--inset-shadow-top: 0 6px 5px -5px var(--color-base-300) inset;
+	--dvh-head: calc(100dvh - 4rem);
+}
+@layer utilities {
+	.menu {
+		--menu-active-fg: var(--color-base-content);
+		--menu-active-bg: var(--color-base-300);
+	}
+}
